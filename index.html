@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Blog</title>
+</head>
+
+<body>
+
+  <header class="flex p-3 justify-between bg-black text-white sticky">
+    <h2 class="font-bold uppercase">unkuseni's blog</h2>
+    <nav class="md:w-1/2">
+      <button onclick="menuToggle()" type="button" class="md:hidden btn"><i class="fas fa-bars"></i></button>
+      <button onclick="menuToggle()" type="button" class="hidden md:hidden cancel-btn"><i
+          class="fas fa-times"></i></button>
+      <ul class="hidden nav-list md:flex md:w-full  md:justify-evenly uppercase">
+        <li><a href="#home">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="bg-gradient-to-br from-green-500  to-blue-700 w-full  backdrop-blur-xl" id="home">
+    <div class="hero py-20 min-h-[90vh] font-bold mx-auto max-w-[768px]">
+      <h2 class="text-3xl uppercase text-center">my</h2>
+      <p class="uppercase text-center  text-xs my-5  font-light animate-pulse">unkuseni presents his blog <br>
+        software engineering and design experience</p>
+      <h2 class="text-3xl text-center uppercase ">blog</h2>
+      <div class="mt-10">
+        <h2 class="text-3xl uppercase text-center">about me</h2>
+        <p class="text-center font-light mt-5 text-sm animate-pulse">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Distinctio architecto laboriosam omnis voluptatum fugit labore exercitationem iusto. Dolor et inventore
+          molestiae non aut, soluta magni! Atque dolore expedita dolorum harum ipsum exercitationem sequi necessitatibus
+          perferendis corrupti officia, illo quos dignissimos excepturi velit blanditiis. Quae, reprehenderit maxime
+          ipsam quam quia incidunt.</p>
+      </div>
+      <div id="skills" class="mt-10">
+        <h2 class="text-center text-3xl uppercase">skills</h2>
+        <div class="flex gap-2 justify-evenly mt-5">
+          <img src="https://placehold.co/50x50" alt="skill logo">
+          <img src="https://placehold.co/50x50" alt="skill logo">
+          <img src="https://placehold.co/50x50" alt="skill logo">
+          <img src="https://placehold.co/50x50" alt="skill logo">
+          <img src="https://placehold.co/50x50" alt="skill logo">
+          <img src="https://placehold.co/50x50" alt="skill logo">
+        </div>
+      </div>
+    </div>
+
+    <div class="projects mx-auto p-10">
+      <h2 class="text-center text-3xl uppercase font-bold">projects</h2>
+      <div class="flex max-w-[1200px] mx-auto gap-2 mt-4 flex-wrap justify-evenly">
+        <div class="card">
+          <picture class="flex flex-col">
+            <source media="(min-width: 576px)" srcset="https://placehold.co/400x250">
+            <img src="https://placehold.co/300x200" alt="">
+          </picture>
+          <p class="text-center mt-3">todo app</p>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!</p>
+        </div>
+        <div class="card">
+          <picture class="flex flex-col">
+            <source media="(min-width: 576px)" srcset="https://placehold.co/400x250">
+            <img src="https://placehold.co/300x200" alt="">
+          </picture>
+          <p class="text-center mt-3">todo app</p>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!</p>
+        </div>
+        <div class="card">
+          <picture class="flex flex-col">
+            <source media="(min-width: 576px)" srcset="https://placehold.co/400x250">
+            <img src="https://placehold.co/300x200" alt="">
+          </picture>
+          <p class="text-center mt-3">todo app</p>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!</p>
+        </div>
+        <div class="card">
+          <picture class="flex flex-col">
+            <source media="(min-width: 576px)" srcset="https://placehold.co/400x250">
+            <img src="https://placehold.co/300x200" alt="">
+          </picture>
+          <p class="text-center mt-3">todo app</p>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!</p>
+        </div>
+        <div class="card">
+          <picture class="flex flex-col">
+            <source media="(min-width: 576px)" srcset="https://placehold.co/400x250">
+            <img src="https://placehold.co/300x200" alt="">
+          </picture>
+          <p class="text-center mt-3">todo app</p>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!</p>
+        </div>
+        <div class="card">
+          <picture class="flex flex-col">
+            <source media="(min-width: 576px)" srcset="https://placehold.co/400x250">
+            <img src="https://placehold.co/300x200" alt="">
+          </picture>
+          <p class="text-center mt-3">todo app</p>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex socials mx-auto gap-4 w-2/6 justify-evenly pb-5">
+      <img src="https://placehold.co/30x30" alt="social icon" class="rounded-full"><img src="https://placehold.co/30x30"
+        alt="social icon" class="rounded-full"><img src="https://placehold.co/30x30" alt="social icon"
+        class="rounded-full">
+    </div>
+  </main>
+  <footer class="bg-black text-white text-center font-bold text-xs py-3">&copy Copyright reserved 2024.</footer>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/3324c8ff59.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
